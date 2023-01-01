@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDom from "react-dom/client"
+import ReactDOM from "react-dom/client"
 
 
 const heading = React.createElement("h1", 
@@ -9,9 +9,9 @@ const heading = React.createElement("h1",
 "this is heading")
 const heading2 = React.createElement("h2", {}, "this is second heading")
 
-const container = React.createElement("div", {}, [heading. heading2])
+const container = React.createElement("div", {}, [heading, heading2])
 
-const root = ReactDom.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'))
 // passing a react element inside the root.
 root.render(container)
 
